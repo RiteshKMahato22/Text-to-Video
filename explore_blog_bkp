@@ -1,0 +1,319 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog2Vlog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #172b4d;
+            color: #fff;
+            padding: 5px;
+            text-align: left;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            flex: 0 0 250px;
+            background-color: #f4f5f7;
+            padding: 20px;
+        }
+        p{
+            max-width:800px;
+            text-align: left;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+             display:flex;
+            justify-content:center;
+        }
+        footer {
+            background-color: #172b4d;
+            color: #fff;
+            text-align: center;
+            padding: 8px;
+            clear: both;
+            position: fixed; /* or use position: absolute; */
+            bottom: 0;
+            width: 100%;
+
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 40px;
+        }
+        nav ul li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+}
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+
+        }
+        nav ul li a:hover {
+            background-color: #d2d2d2;
+        }
+        .explore-vlog {
+            position: absolute;
+            top: 140px;
+            right: 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .explore-vlog:hover {
+            background-color: #0056b3;
+        }
+        .subpage {
+            display: none;
+        }
+        .subpage.active {
+            display: block;
+        }
+        .content{
+            width:1100px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./confluencelogo.jpg">
+        <h1>Confluence</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="schedule">
+			<div class="container">
+				<div class="schedule-inner">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-12 ">
+							<!-- single-schedule -->
+							<div class="single-schedule first">
+								<div class="inner">
+									<div class="icon">
+										<i class="fa fa-ambulance"></i>
+									</div>
+									<div class="single-content">
+										<h4>Partner of the Year</h4>
+										<p>EPAM Wins 2024 Google Cloud Partner of the Year Award</p>
+										<a href="#">READ MORE<i class="fa fa-long-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- single-schedule -->
+							<div class="single-schedule middle">
+								<div class="inner">
+									<div class="icon">
+										<i class="icofont-prescription"></i>
+									</div>
+									<div class="single-content">
+										<h4>Generative AI</h4>
+										<p>Empower creativity and innovation with Generative AI</p>
+										<a href="#">READ MORE<i class="fa fa-long-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-12 col-12">
+							<!-- single-schedule -->
+							<div class="single-schedule last">
+								<div class="inner">
+									<div class="icon">
+										<i class="icofont-ui-clock"></i>
+									</div>
+									<div class="single-content">
+										<h4>Cloud-Native</h4>
+										<p>EPAM Signs Strategic Colloboration Agreement with AWS</p>
+										<a href="#">READ MORE<i class="fa fa-long-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+        <main>
+            <div class="content">
+
+            <div id="blog" class="subpage active">
+                <h2>Mastering the Art of Taking a Vacation: A Guide for Work-Life Balance</h2>
+                <p>Have you ever felt that sinking feeling of uncertainty creeping in just as you're about to head out on vacation? </p>
+                <p>With a little planning and foresight, you can bid adieu to those worries and embark on your well-deserved break with confidence. Let's delve into some tried and tested strategies to ensure your vacation is smooth sailing from start to finish.</p>
+                <p><b>1. Plan Ahead:</b>
+
+                    Before you even start packing your sunscreen and flip-flops, take a moment to consider the impact of your absence on your work commitments. Here's a checklist to get you started:
+
+                    Add your vacation dates to the company calendar to keep everyone in the loop. Have a chat with your manager to discuss any projects or tasks that might be affected by your absence.
+                    If you're part of any rotational duties or have specific responsibilities like being a Major Incident Manager, make arrangements for someone to cover for you.</p>
+
+                <p><b>2. Communicate Effectively:</b>
+
+                    Communication is key, especially when it comes to managing expectations. Make sure you:
+
+                    Set up an out-of-office email response and update your Slack status to let colleagues know you're away.
+                    Consider creating a detailed out-of-office page outlining your absence duration and any crucial information. This not only helps your team but also ensures you can truly disconnect and unwind.</p>
+                <p><b>3. Delegate and Cover Your Bases:</b>
+
+                   Think beyond your immediate tasks and consider all the ways your absence might impact your team. Take proactive steps to:
+
+                   Delegate responsibilities and tasks to ensure nothing falls through the cracks.
+                   Set up overrides for any rotational duties or critical roles you're responsible for.
+                   Check if there are any other processes or team dependencies that require your attention and address them beforehand.</p>
+                <p><b>4. Extend Your Reach:</b>
+
+                   For longer vacations spanning more than a couple of weeks, consider going the extra mile:
+
+                   Create a personalized out-of-office page for a seamless transition in your absence. Customize your Slack and email messages to reflect your availability and expected return date.
+                    By following these steps, you can bid farewell to that nagging feeling of uncertainty and confidently step into vacation mode. Remember, a well-deserved break not only rejuvenates your spirit but also enhances your productivity and overall well-being. So, go ahead, pack your bags, and embrace the bliss of a worry-free vacation. Your future self will thank you for it!</p>
+            </div>
+            <div id="about" class="subpage">
+                <h2>About Me</h2>
+                <p>This is where you can write about yourself and your interests.</p>
+            </div>
+            <div id="contact" class="subpage">
+                <h2>Contact Me</h2>
+                <p>You can contact me via email at example@example.com.</p>
+            </div>
+        </div>
+
+        </main>
+    </div>
+<!--    <p id="video">-->
+<!--        <video width="400" height="520" controls>-->
+<!--        <source src="./temp_video.mp4" type="video/mp4">-->
+<!--         Your browser does not support the video tag.-->
+<!--         </video>-->
+<!--    </p>-->
+<!--    <h1>Welcome to Explore Blog</h1>-->
+<!--    &lt;!&ndash; Add a link or button to redirect to the video page &ndash;&gt;-->
+<!--    <a href="/video_page">Watch Video</a>-->
+
+
+
+    <footer>
+        &copy; 2024 Confluence. All rights reserved.
+    </footer>
+
+<!--    <button href="/video_page" class="explore-vlog" >Explore Vlog</button>-->
+    <a href="/video_page" class="button">
+        <button class="explore-vlog" >Explore Vlog</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const nav = document.querySelector('nav');
+            const main = document.querySelector('main');
+            const navLinks = document.querySelectorAll('nav ul li a');
+            const subpages = document.querySelectorAll('.subpage');
+            const exploreVlogButton = document.querySelector('.explore-vlog');
+            navLinks.forEach((link) => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    subpages.forEach((subpage) => {
+                        if (subpage.id === targetId) {
+                            subpage.classList.add('active');
+                        } else {
+                            subpage.classList.remove('active');
+                        }
+                    });
+                });
+            });
+
+            // Fetch blog content from the server
+            // For this example, let's just use static content
+            const blogContent = {
+                blog: '<h2>Mastering the Art of Taking a Vacation: A Guide for Work-Life Balance</h2><p>Have you ever felt that sinking feeling of uncertainty creeping in just as you're about to head out on vacation? You know the one – that nagging doubt, "Did I leave the oven on?" Well, fear not! With a little planning and foresight, you can bid adieu to those worries and embark on your well-deserved break with confidence. Let's delve into some tried and tested strategies to ensure your vacation is smooth sailing from start to finish.
+
+1. Plan Ahead:
+
+Before you even start packing your sunscreen and flip-flops, take a moment to consider the impact of your absence on your work commitments. Here's a checklist to get you started:
+
+Add your vacation dates to the company calendar to keep everyone in the loop.
+Have a chat with your manager to discuss any projects or tasks that might be affected by your absence.
+If you're part of any rotational duties or have specific responsibilities like being a Major Incident Manager, make arrangements for someone to cover for you.
+2. Communicate Effectively:
+
+Communication is key, especially when it comes to managing expectations. Make sure you:
+
+Set up an out-of-office email response and update your Slack status to let colleagues know you're away.
+Consider creating a detailed out-of-office page outlining your absence duration and any crucial information. This not only helps your team but also ensures you can truly disconnect and unwind.
+3. Delegate and Cover Your Bases:
+
+Think beyond your immediate tasks and consider all the ways your absence might impact your team. Take proactive steps to:
+
+Delegate responsibilities and tasks to ensure nothing falls through the cracks.
+Set up overrides for any rotational duties or critical roles you're responsible for.
+Check if there are any other processes or team dependencies that require your attention and address them beforehand.
+4. Extend Your Reach:
+
+For longer vacations spanning more than a couple of weeks, consider going the extra mile:
+
+Create a personalized out-of-office page for a seamless transition in your absence.
+Customize your Slack and email messages to reflect your availability and expected return date.
+By following these steps, you can bid farewell to that nagging feeling of uncertainty and confidently step into vacation mode. Remember, a well-deserved break not only rejuvenates your spirit but also enhances your productivity and overall well-being. So, go ahead, pack your bags, and embrace the bliss of a worry-free vacation. Your future self will thank you for it!</p>',
+                about: '<h2>About Me</h2><p>This is where you can write about yourself and your interests.</p>',
+                contact: '<h2>Contact Me</h2><p>You can contact me via email at example@example.com.</p>'
+            };
+
+            for (const [key, value] of Object.entries(blogContent)) {
+                const navItem = document.createElement('a');
+                navItem.setAttribute('href', `#${key}`);
+                navItem.textContent = key.charAt(0).toUpperCase() + key.slice(1);
+                nav.appendChild(navItem);
+
+                const subpageDiv = document.createElement('div');
+                subpageDiv.id = key;
+                subpageDiv.classList.add('subpage');
+                subpageDiv.innerHTML = value;
+                main.appendChild(subpageDiv);
+            }
+            exploreVlogButton.addEventListener('click', function() {
+                // Make an AJAX request to the Flask server
+                fetch('/explore-vlog')
+                    .then(response => response.json())
+                    .then(data => {
+                        // Here you would handle the response, e.g., display the video URL
+                        console.log('Received video URL:', data.video_url);
+                        // For this example, let's just open the video URL in a new tab
+                        window.open(data.video_url, '_blank');
+                    })
+                    .catch(error => console.error('Error exploring vlog:', error));
+            });
+        });
+    </script>
+</body>
+</html>
